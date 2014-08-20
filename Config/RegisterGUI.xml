@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Register GUI Configuration -->
+<Config>
+<Monkeys>
+
+    <Monkey
+ 	Name = "Debug"
+        Image = "Debug.jpg"
+    > </Monkey>
+   
+    <Monkey
+ 	Name = "Mouse47"
+        Image = "mouse.jpg"
+    > </Monkey>
+
+    <Monkey
+ 	Name = "Mouse48"
+        Image = "mouse.jpg"
+    > </Monkey>
+
+    <Monkey
+ 	Name = "Mouse49"
+        Image = "mouse.jpg"
+    > </Monkey>
+
+
+    <Monkey
+ 	Name = "Mouse50"
+        Image = "mouse3.jpg"
+    > </Monkey>
+
+
+    <Monkey
+ 	Name = "Mouse51"
+        Image = "mouse3.jpg"
+    > </Monkey>
+
+
+    <Monkey
+ 	Name = "Mouse54"
+        Image = "mouse4.jpg"
+    > </Monkey>
+
+    <Monkey
+ 	Name = "Mouse55"
+        Image = "mouse4.jpg"
+    > </Monkey>
+
+
+    <Monkey
+ 	Name = "Mouse56"
+        Image = "mouse4.jpg"
+    > </Monkey>
+
+
+ > </Monkeys>
+
+</Config>

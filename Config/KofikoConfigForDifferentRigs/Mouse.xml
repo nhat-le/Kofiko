@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Behavior GUI Configuration -->
+
+<Config>
+
+<Directories
+   LogFolder = "C:\Shay\Data\Logs\"
+   PTB_Folder = "C:\toolbox\Psychtoolbox\"
+> </Directories>
+
+<StimulusServer
+    SingleComputerMode = "0"
+    PTBScreen = "2"
+	Address = "131.215.25.221"
+    Port = "1502"
+> </StimulusServer> 
+
+<RemoteAccess
+    Port = "2000"
+> </RemoteAccess>
+
+<VideoStreaming
+    DeviceName = ""
+    SampleRateHz = "0"
+> </VideoStreaming>
+
+<EyeCalib
+    CenterX = "2041"
+    CenterY = "2018"
+    ScaleX = "-3.8"
+    ScaleY = "3.8"
+> </EyeCalib>
+
+<VarSave
+    EyePos = "0"
+    EyePosSampleRateHz = "120"
+    ExternalTriggers = "1"
+    Spikes = "0"
+    Motion = "0"
+    MotionSampleRateHz = "10"
+    WaterLevelUponExit = "0"
+> </VarSave>
+
+<GUIParams
+    PTBScreen = "0"
+    Experimental = "0"
+    Debug = "0"
+    JuiceMl_To_Ms = "8"
+    JuiceTimeMS = "40"
+    JuiceKey = "74"
+	SetupJuiceKey = "75"
+    RecenterKey = "67"
+    DrawAttentionKey = "65"
+    EyeTracesKey = "69"
+    ResetStatKey = "85"
+    TogglePTB = "80"
+    ToggleStat = "72"
+
+    RefreshRateMS = "60"
+    SettingsRefreshRateMS = "1000"
+    MotionThreshold = "250000"
+    PauseTaskAfterMotionSec = "0.1"
+    MotionResumeTaskSec = "3"
+
+> </GUIParams>
+
+<DAQ
+
+    VirtualDAQ = "0"
+    AcqusitionCard = "mc"
+    AcqusitionCardBoard = "0"
+    JuicePort = "25"
+	PuffPort = "26"
+    ConveyerPort = "0"
+    VoltageDiffThreshold = "500"
+	
+		
+    StartRecordPort = "3"
+    StimulationPort = "3"
+    UseMouseClickAsEyePosition = "0"
+    MonitorIndexForEyePosition = "0"
+    SimulateTouchScreenForDebug = "0"
+    
+    EyePortX = "3"
+    EyePortY = "3"
+    EyePortPupil = "3"
+
+    MotionPort = "3"
+    ExternalTriggers = "3"
+    ExternalTriggersNames = "3"
+    ExternalTriggerThreshold = "3"
+    SystemStrobeFile = "SystemStrobeEvents.txt"
+
+> </DAQ>
+
+<Sounds
+    AudioDeviceName = "ASIO4ALL v2"    	
+> </Sounds>
+
+<Paradigms>
+
+    <Paradigm Name = "Default"
+        Init = "fnParadigmDefaultInit"
+        Cycle = "fnParadigmDefaultCycle"
+        Draw = "fnParadigmDefaultDraw"
+        DrawCycle = "fnParadigmDefaultDrawCycle"
+        Callbacks = "fnParadigmDefaultCallbacks"
+        GUI = "fnParadigmDefaultGUI"
+        Close = "fnParadigmDefaultClose"
+        ParadigmSwitch = "fnParadigmDefaultParadigmSwitch"
+        StrobeCodes = "DefualtStrobeCodes.txt"
+   > </Paradigm>
+
+  
+       <Paradigm Name = "MouseWheel"
+        Init = "fnParadigmMouseWheelInitNew"
+        Cycle = "fnParadigmMouseWheelCycleNew"
+        Draw = "fnParadigmMouseWheelDrawNew"
+        DrawCycle = "fnParadigmMouseWheelDrawCycleNew2"
+        Callbacks = "fnParadigmMouseWheelCallbacksNew"
+        GUI = "fnParadigmMouseWheelGUINew"
+        Close = "fnParadigmMouseWheelCloseNew"
+        ParadigmSwitch = "fnParadigmMouseWheelParadigmSwitchNew"
+        StrobeCodes = "MouseWheelStrobeCodesNew.txt"
+
+		Initial_BoxWidth = "500"
+		Initial_BoxHeight = "400"
+		
+		
+		Initial_WheelVoltage = "48000"
+        Initial_ShowPhotodiodeRect = "0"
+
+        Initial_ShowImagesOnLoad = "0" 
+        Initial_RescaleToPower2 = "0"
+        Initial_PreloadTexturesVRAM = "1"
+
+        Initial_JuiceTimeMS = "120"
+		Initial_WaitTime = "1"
+		Initial_TargetVoltageDiffRange = "50"
+		Initial_TargetPosRange = "500"
+		Initial_MovementReward = "0"
+		Initial_RewardFreq = "1"
+        Initial_MaxVoltageDiff = "10000"
+		Initial_MinVoltageDiff = "5"
+		Initial_MaxStimulusON_MS = "800"
+		Initial_MinStimulusON_MS = "10"
+		Initial_MoveStepPix = "20"
+        Initial_BandWidth = "0"
+        Initial_BandCenter = "200"
+        Initial_BandColor = "0 255 255"
+        Initial_Mode = "1"
+        
+
+        Initial_BackgroundColor = "127 127 127"
+        Initial_CorrectBoxColor = "255 116 0"
+        Initial_StimulusSizePix = "300"
+        Initial_RandomStimuli = "1"
+  
+        Initial_DefaultImageFolder = "\\KOFIKO4-PC\Shay\Data\StimulusSet\"
+        Initial_DefaultImageList = "\\KOFIKO4-PC\Shay\Data\StimulusSet\MouseWheel\orientationbars-vertical.xml"
+        Initial_FavroiteList1 = "\\KOFIKO4-PC\Shay\Data\StimulusSet\MouseWheel\orientationbars-vh1.xml"
+        Initial_FavroiteList2 = "\\KOFIKO4-PC\Shay\Data\StimulusSet\MouseWheel\orientationbars-vh2.xml"
+        Initial_FavroiteList3 = "\\KOFIKO4-PC\Shay\Data\StimulusSet\MouseWheel\imlist_mousewheel4bars.xml"
+        Initial_ParameterSweep = "0"
+
+   > </Paradigm> 
+
+</Paradigms>
+
+</Config>

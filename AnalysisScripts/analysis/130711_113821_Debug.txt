@@ -1,0 +1,27 @@
+11-Jul-2013 11:38:25:358 Starting Kofiko...
+11-Jul-2013 11:38:25:366 Initializing Data Acqusition Card...
+11-Jul-2013 11:38:34:673 Trying to setup a connection with the stimulus server
+11-Jul-2013 11:38:34:677 Connection established
+11-Jul-2013 11:38:34:677 Starting PTB on stimulus server
+11-Jul-2013 11:38:37:761 Using PTB toolbox version: 3.0.10
+11-Jul-2013 11:38:37:892 Starting PTB Screen
+11-Jul-2013 11:38:40:878 Initializing Paradigm Default
+11-Jul-2013 11:38:40:931 Switching to paradigm Default
+11-Jul-2013 11:38:40:942 Finite state machine of Default is running, starting from state 0
+11-Jul-2013 11:38:45:761 Closing juice valve
+11-Jul-2013 11:38:45:764 Clearing screen
+11-Jul-2013 11:38:45:767 Initializing Paradigm Touch Force Choice
+11-Jul-2013 11:38:47:274 Switching to paradigm Touch Force Choice
+11-Jul-2013 11:38:47:276 Finite state machine of Touch Force Choice is running, starting from state 0
+11-Jul-2013 11:38:54:644 Starting Touch Force Choice paradigm
+11-Jul-2013 11:39:26:729 Stopping Paradigm
+11-Jul-2013 11:39:26:730 Shutting down
+11-Jul-2013 11:39:26:733 Closing juice valve
+11-Jul-2013 11:39:26:736 Clearing screen
+11-Jul-2013 11:39:26:739 Exitting Kofiko
+11-Jul-2013 11:39:26:750 Closing local PTB Screen
+11-Jul-2013 11:39:26:771 Writing information to disk...
+11-Jul-2013 11:39:26:774 Writing all paradigms to C:\Shay\Data\Logs\130711_113821_Debug.mat
+11-Jul-2013 11:39:27:194 Data Saved!
+11-Jul-2013 11:39:27:195 Closing connection to stimulus server
+11-Jul-2013 11:39:27:195 Closing connection to real time stat server
