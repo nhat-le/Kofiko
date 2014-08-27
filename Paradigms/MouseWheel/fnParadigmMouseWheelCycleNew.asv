@@ -217,19 +217,18 @@ if ismember('target', lower(g_strctParadigm.m_strctCurrentTrial.m_strctMedia.m_a
 %        abs(g_strctParadigm.m_strctCurrentTrial.m_fVoltageDiff) < fTargetVoltageDiffRange && ...
 %        abs(g_strctParadigm.m_strctCurrentTrial.m_pt2fStimulusPos(1)-aiScreenSize(3)/2) < fTargetPosRange && ~g_strctParadigm.m_bGivenJuiceperTrial
 %        fJuiceTimeMS = g_strctParadigm.JuiceTimeMS.Buffer(g_strctParadigm.JuiceTimeMS.BufferIdx);
-      if ~g_strctParadigm.m_strctCurrentTrial.m_bGivenJuice && ...
-              StopTime > WaitTime && ...
-              abs(g_strctParadigm.m_strctCurrentTrial.m_pt2fStimulusPos(1)-aiScreenSize(3)/2) < fTargetPosRange - fStimulusSizePix && ...
-              ~g_strctParadigm.m_bGivenJuiceperTrial
-          % JUICE
-          fJuiceTimeMS = g_strctParadigm.JuiceTimeMS.Buffer(g_strctParadigm.JuiceTimeMS.BufferIdx);
-          fnParadigmToKofikoComm('newjuice', fJuiceTimeMS);
-
-          strctTrial.m_bGivenJuice = true;
-          g_strctParadigm.m_bGivenJuiceperTrial = true;
-          fnTsSetVarParadigm('GivenJuice',strctTrial.m_bGivenJuice);
-          fnTsSetVarParadigm('CorrectStop',g_strctParadigm.m_strctCurrentTrial.m_iStimulusIndex);
-      end
+        if ~g_strctParadigm.m_strctCurrentTrial.m_bGivenJuice && ...
+       StopTime > WaitTime && ...
+       abs(g_strctParadigm.m_strctCurrentTrial.m_pt2fStimulusPos(1)-fStimulusSizePix-aiScreenSize(3)/2) < fTargetPosRange && ~g_strctParadigm.m_bGivenJuiceperTrial
+      % JUICE
+      fJuiceTimeMS = g_strctParadigm.JuiceTimeMS.Buffer(g_strctParadigm.JuiceTimeMS.BufferIdx);
+      fnParadigmToKofikoComm('newjuice', fJuiceTimeMS);
+    
+      strctTrial.m_bGivenJuice = true;
+      g_strctParadigm.m_bGivenJuiceperTrial = true;
+      fnTsSetVarParadigm('GivenJuice',strctTrial.m_bGivenJuice);
+      fnTsSetVarParadigm('CorrectStop',g_strctParadigm.m_strctCurrentTrial.m_iStimulusIndex);
+        end
 elseif ~g_strctParadigm.m_strctCurrentTrial.m_bGivenJuice && ...
         StopTime > WaitTime && ...
        abs(g_strctParadigm.m_strctCurrentTrial.m_pt2fStimulusPos(1)-aiScreenSize(3)/2) < fTargetPosRange && ~g_strctParadigm.m_bGivenJuiceperTrial  
